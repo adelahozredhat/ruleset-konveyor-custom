@@ -1,0 +1,6 @@
+- ruleID: add-atom-tag
+  description: "Atom tag"
+  labels:
+  - konveyor.io/include=always
+  - konveyor.io/target=atom
+  tag: ["Atom"]

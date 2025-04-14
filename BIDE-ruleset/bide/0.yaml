@@ -1,0 +1,6 @@
+- ruleID: add-bide-tag
+  description: "Bide tag"
+  labels:
+  - konveyor.io/include=always
+  - konveyor.io/target=bide
+  tag: ["Bide"]
