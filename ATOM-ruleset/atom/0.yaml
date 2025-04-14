@@ -4,3 +4,6 @@
   - konveyor.io/include=always
   - konveyor.io/target=atom
   tag: ["Atom"]
+  when:
+    builtin.file:
+      pattern: "*Atom.jar"
