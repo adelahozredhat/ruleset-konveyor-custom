@@ -7,12 +7,3 @@
     builtin.file:
       pattern: "*.jar"
   tag: ["Atom"]
-- ruleID: discover-java-files
-  description: "Java source files"
-  labels:
-  - konveyor.io/include=always
-  - konveyor.io/target=atom
-  when:
-    builtin.file:
-      pattern: "*.java"
-  tag: ["Java Source"]

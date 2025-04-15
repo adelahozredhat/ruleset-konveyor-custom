@@ -6,4 +6,4 @@
   tag: ["Bide"]
   when:
     builtin.file:
-      pattern: *Bide.jar
+      pattern: "*.jar"

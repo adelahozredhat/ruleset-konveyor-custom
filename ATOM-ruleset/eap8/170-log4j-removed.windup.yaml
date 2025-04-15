@@ -8,7 +8,6 @@
   - konveyor.io/source=eap
   - konveyor.io/target=eap8+
   - konveyor.io/target=eap
-  - noincludejsp
   links:
   - title: 'Migration: Apache Log4j version 1 is not longer provided in EAP 8'
     url: https://access.redhat.com/articles/6973120
@@ -47,7 +46,6 @@
   - konveyor.io/source=eap
   - konveyor.io/target=eap8+
   - konveyor.io/target=eap
-  - noincludejsp
   links:
   - title: 'Migration: Apache Log4j version 1 is not longer provided in EAP 8'
     url: https://access.redhat.com/articles/6973120
@@ -79,7 +77,6 @@
   - konveyor.io/source=eap
   - konveyor.io/target=eap8+
   - konveyor.io/target=eap
-  - noincludejsp
   links:
   - title: 'Migration: Apache Log4j version 1 is not longer provided in EAP 8'
     url: https://access.redhat.com/articles/6973120
@@ -110,7 +107,6 @@
   - konveyor.io/source=eap
   - konveyor.io/target=eap8+
   - konveyor.io/target=eap
-  - noincludejsp
   links:
   - title: 'Migration: Apache Log4j version 1 is not longer provided in EAP 8'
     url: https://access.redhat.com/articles/6973120
@@ -142,7 +138,6 @@
   - konveyor.io/source=eap
   - konveyor.io/target=eap8+
   - konveyor.io/target=eap
-  - noincludejsp
   links:
   - title: 'Migration: Apache Log4j version 1 is not longer provided in EAP 8'
     url: https://access.redhat.com/articles/6973120
