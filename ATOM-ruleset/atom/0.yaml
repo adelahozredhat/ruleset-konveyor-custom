@@ -6,4 +6,4 @@
   tag: ["Atom"]
   when:
     builtin.file:
-      pattern: "*Atom.jar"
+      pattern: "\b[A-Za-z]+Atom\.jar\b"

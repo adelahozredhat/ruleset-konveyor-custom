@@ -4,3 +4,6 @@
   - konveyor.io/include=always
   - konveyor.io/target=bide
   tag: ["Bide"]
+  when:
+    builtin.file:
+      pattern: *Bide.jar
