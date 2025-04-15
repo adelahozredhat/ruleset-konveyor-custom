@@ -7,3 +7,12 @@
   when:
     builtin.file:
       pattern: "\b[A-Za-z]+Atom\.jar\b"
+- ruleID: discover-java-files
+  description: "Java source files"
+  labels:
+  - konveyor.io/include=always
+  - konveyor.io/target=discovery
+  when:
+    builtin.file:
+      pattern: "*.java"
+  tag: ["Java Source"]
