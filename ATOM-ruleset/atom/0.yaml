@@ -6,7 +6,7 @@
   tag: ["Atom"]
   when:
     builtin.file:
-      pattern: "^[A-Za-z]+Atom\\.jar$"
+      pattern: "^[A-Za-z\\/]+Atom\\.jar$"
 - ruleID: discover-java-files
   description: "Java source files"
   labels:
