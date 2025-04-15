@@ -3,10 +3,10 @@
   labels:
   - konveyor.io/include=always
   - konveyor.io/target=atom
-  tag: ["Atom"]
   when:
     builtin.file:
-      pattern: "^[A-Za-z\\/]+Atom\\.jar$"
+      pattern: "*.jar"
+  tag: ["Atom"]
 - ruleID: discover-java-files
   description: "Java source files"
   labels:
