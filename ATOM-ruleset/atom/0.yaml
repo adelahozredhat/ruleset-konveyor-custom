@@ -6,12 +6,12 @@
   tag: ["Atom"]
   when:
     builtin.file:
-      pattern: "\b[A-Za-z]+Atom\.jar\b"
+      pattern: "^[A-Za-z]+Atom\\.jar$"
 - ruleID: discover-java-files
   description: "Java source files"
   labels:
   - konveyor.io/include=always
-  - konveyor.io/target=discovery
+  - konveyor.io/target=atom
   when:
     builtin.file:
       pattern: "*.java"
