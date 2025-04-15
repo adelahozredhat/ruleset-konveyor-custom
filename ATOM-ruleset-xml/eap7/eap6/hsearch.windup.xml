@@ -333,28 +333,7 @@
                 </hint>
             </perform>
         </rule>
-        <rule id="hsearch-00110">
-            <when>
-                <javaclass references="org.hibernate.search.backend.configuration.impl.IndexWriterSetting.{constant}">
-                    <location>ENUM_CONSTANT</location>
-                    <location>IMPORT</location>
-                </javaclass>
-            </when>
-            <perform>
-                <hint title="Hibernate Search 5 - Deprecated enum constant in IndexWriterSetting" effort="1" category-id="optional">
-                    <message>The `IndexWriterSetting.MAX_THREAD_STATES` and `IndexWriterSetting.TERM_INDEX_INTERVAL` enum constants are deprecated.
-                    They affect which properties are read from the configuration, so the fact they they are missing means that configuration properties such as `hibernate.search.Animals.2.indexwriter.term_index_interval = default` are now ignored.
-                    The only side effect is that the property is not applied.</message>
-                    <link
-                        href="https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_advanced_integrator_changes"
-                        title="Advanced Integrator Changes in Hibernate Search 5.x" />
-                    <tag>hibernate-search</tag>
-                </hint>
-            </perform>
-            <where param="constant">
-                <matches pattern="(MAX_THREAD_STATES|TERM_INDEX_INTERVAL)" />
-            </where>
-        </rule>
+        
         <rule id="hsearch-00111">
             <when>
                 <javaclass references="org.hibernate.search.annotations.Spatial" >

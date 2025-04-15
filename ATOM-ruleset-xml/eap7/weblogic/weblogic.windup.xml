@@ -151,35 +151,6 @@
                 </hint>
             </perform>
         </rule>
-        <rule id="weblogic-eap7-08000">
-            <when>
-                <javaclass references="weblogic.transaction.{classname}.getTransactionManager()">
-                    <location>METHOD_CALL</location>
-                </javaclass>
-            </when>
-            <perform>
-                <iteration>
-                    <hint title="WebLogic ClientTxHelper" effort="1">
-                        <message>
-                            <![CDATA[
-                            Look up the Java Enterprise Edition `javax.transaction.TransactionManager` in JBoss EAP using the following code:
-
-                            ```java
-                            InitialContext context = new InitialContext();
-                            TransactionManager transactionManager =
-                            (TransactionManager)context.lookup("java:jboss/TransactionManager");
-                            ```
-                            ]]>
-                        </message>
-                        <tag>transactions</tag>
-                        <tag>weblogic</tag>
-                    </hint>
-                </iteration>
-            </perform>
-            <where param="classname">
-                <matches pattern="(Client)*TxHelper" />
-            </where>
-        </rule>
         <rule id="weblogic-eap7-09000">
             <when>
                 <javaclass references="weblogic.jdbc.vendor.oracle.OracleThinClob" />

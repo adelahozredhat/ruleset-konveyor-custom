@@ -197,22 +197,6 @@
             </perform>
         </rule>
 
-        <rule id="javax-to-jakarta-servlet-00072">
-            <when>
-                <javaclass references="javax.servlet.UnavailableException(int, javax.servlet.Servlet{*}">
-                    <location>CONSTRUCTOR_CALL</location>
-                </javaclass>
-            </when>
-            <perform>
-                <hint title="Constructor UnavailableException(int, Servlet, String) in javax.servlet.UnavailableException has been removed" effort="1" category-id="mandatory">
-                    <message>
-                        Constructor UnavailableException(int, Servlet, String) in javax.servlet.UnavailableException has been removed. Use UnavailableException(String, int) instead.
-                    </message>
-                    <link title="Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta Servlet" href="https://access.redhat.com/articles/6980265#servlet"/>
-                </hint>
-            </perform>
-        </rule>
-
         <rule id="javax-to-jakarta-servlet-00080">
             <when>
                 <javaclass references="javax.servlet.http.HttpServletRequest.isRequestedSessionIdFromUrl({*})">
