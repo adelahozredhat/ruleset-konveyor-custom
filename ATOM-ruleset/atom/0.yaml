@@ -3,7 +3,11 @@
   labels:
   - konveyor.io/include=always
   - konveyor.io/target=atom
+  - atom
+  links: []
   when:
-    builtin.file:
-      pattern: "*.jar"
+  java.referenced:
+    location: IMPORT
+    pattern: net.bizkaia.atom*
+
   tag: ["Atom"]
