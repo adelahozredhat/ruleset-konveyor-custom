@@ -3,7 +3,10 @@
   labels:
   - konveyor.io/include=always
   - konveyor.io/target=bide
-  tag: ["Bide"]
+  - bide
+  links: []
   when:
-    builtin.file:
-      pattern: "*.jar"
+    java.referenced:
+      location: IMPORT
+      pattern: net.bizkaia.atom*
+  tag: ["Bide"]

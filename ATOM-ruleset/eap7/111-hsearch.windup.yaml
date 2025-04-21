@@ -511,10 +511,6 @@
       location: ANNOTATION
       pattern: org.hibernate.search.annotations.Key
 - category: optional
-  customVariables:
-  - name: constant
-    nameOfCaptureGroup: constant
-    pattern: org.hibernate.search.backend.configuration.impl.IndexWriterSetting.(?P<constant>(MAX_THREAD_STATES|TERM_INDEX_INTERVAL))
   description: Hibernate Search 5 - Deprecated enum constant in IndexWriterSetting
   effort: 1
   labels:
