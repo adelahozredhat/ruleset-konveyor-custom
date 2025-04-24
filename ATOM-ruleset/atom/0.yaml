@@ -1,9 +1,5 @@
 - ruleID: add-atom-tag-01000
   description: "Atom tag"
-  labels:
-  - konveyor.io/include=always
-  - konveyor.io/target=atom
-  - atom
   links: []
   when:
     java.referenced:
