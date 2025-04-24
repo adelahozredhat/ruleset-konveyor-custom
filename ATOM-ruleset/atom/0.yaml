@@ -7,7 +7,8 @@
   when:
     builtin.filecontent:
       pattern: "net.bizkaia.atom"
-  tag: ["Spring XML"]
+  tag: 
+  - "Other=Atom"
 - ruleID: add-atom-message-02000
   customVariables: []
   description: "Atom Message"
