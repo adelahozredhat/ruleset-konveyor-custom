@@ -19,11 +19,8 @@
   labels:
   - konveyor.io/include=always
   when:
-    or:
-    - builtin.filecontent:
-        pattern: "net.bizkaia.atom"
-    - java.referenced:
-        pattern: net.bizkaia.atom*
+    java.referenced:
+      pattern: net.bizkaia.atom*
   message: |-
     ERROROROROROR
   effort: 1
