@@ -3,8 +3,7 @@
   links: []
   labels:
   - konveyor.io/include=always
-  - konveyor.io/target=atom
-  - atom
+  - konveyor.io/target=discovery
   when:
     java.referenced:
       pattern: net.bizkaia.atom*
