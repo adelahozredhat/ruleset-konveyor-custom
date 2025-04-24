@@ -6,6 +6,7 @@
   - konveyor.io/include=always
   when:
     java.referenced:
+      location: TYPE
       pattern: net.bizkaia.atom*
   tag: 
   - "Other=Atom"
