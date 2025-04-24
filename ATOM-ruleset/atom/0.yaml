@@ -5,7 +5,10 @@
   labels:
   - konveyor.io/include=always
   when:
-    java.referenced:
-      pattern: net.bizkaia.atom*
+    or:
+    - builtin.filecontent:
+        pattern: "net.bizkaia.atom"
+    - java.referenced:
+        pattern: net.bizkaia.atom*
   tag: 
   - "Atom"
