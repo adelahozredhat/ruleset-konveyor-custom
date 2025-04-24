@@ -19,7 +19,6 @@
   - konveyor.io/include=always
   when:
     java.referenced:
-      location: IMPORT
       pattern: net.bizkaia.atom*
   message: |-
     ERROROROROROR
