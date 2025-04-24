@@ -5,8 +5,8 @@
   labels:
   - konveyor.io/include=always
   when:
-    builtin.filecontent:
-      pattern: "net.bizkaia.atom"
+    java.referenced:
+      pattern: net.bizkaia.atom*
   tag: 
   - "Other=Atom"
 - ruleID: add-atom-message-02000
