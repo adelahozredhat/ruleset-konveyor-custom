@@ -5,11 +5,8 @@
   labels:
   - konveyor.io/include=always
   when:
-    or:
-    - builtin.filecontent:
-        pattern: "net.bizkaia.atom"
-    - java.referenced:
-        pattern: net.bizkaia.atom*
+    builtin.filecontent:
+      pattern: "net.bizkaia.atom"
   tag: ["Spring XML"]
 - ruleID: add-atom-message-02000
   customVariables: []
@@ -18,8 +15,8 @@
   labels:
   - konveyor.io/include=always
   when:
-    java.referenced:
-      pattern: net.bizkaia.atom*
+    builtin.filecontent:
+      pattern: "net.bizkaia.atom"
   message: |-
     ERROROROROROR
   effort: 1
