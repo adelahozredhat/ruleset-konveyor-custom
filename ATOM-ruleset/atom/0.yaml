@@ -1,10 +1,11 @@
 - ruleID: add-atom-tag-01000
+  customVariables: []
   description: "Atom tag"
   links: []
   labels:
   - konveyor.io/include=always
-  - konveyor.io/target=discovery
   when:
     java.referenced:
       pattern: net.bizkaia.atom*
-  tag: ["Atom"]
+  tag: 
+  - "Atom"
