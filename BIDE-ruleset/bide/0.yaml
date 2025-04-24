@@ -8,5 +8,5 @@
   when:
     java.referenced:
       location: IMPORT
-      pattern: net.bizkaia.atom*
+      pattern: net.bizkaia.bide*
   tag: ["Bide"]

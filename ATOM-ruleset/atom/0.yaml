@@ -1,8 +1,11 @@
 - ruleID: add-atom-tag-01000
   description: "Atom tag"
   links: []
+  labels:
+  - konveyor.io/include=always
+  - konveyor.io/target=atom
+  - atom
   when:
     java.referenced:
-      location: IMPORT
       pattern: net.bizkaia.atom*
   tag: ["Atom"]
