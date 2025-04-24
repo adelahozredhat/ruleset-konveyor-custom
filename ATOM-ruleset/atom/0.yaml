@@ -21,3 +21,14 @@
   message: |-
     ERROROROROROR
   effort: 1
+- ruleID: add-atom-tag-03000
+  customVariables: []
+  description: "Atom tag"
+  links: []
+  labels:
+  - konveyor.io/include=always
+  when:
+    java.referenced:
+      pattern: org.springframework.samples.petclinic*
+  tag: 
+  - "Other=Atom"
